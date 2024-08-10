@@ -1,0 +1,35 @@
+// Override default variables before the import
+$body-bg: white;
+
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+body {
+  font-family: "Ubuntu", sans-serif; /* Default font for the body */
+  background-color: $body-bg;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cabin", sans-serif; /* Heading font */
+  font-weight: 700;
+}
+
+//container override
+@media (min-width: 1440px) {
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1460px !important;
+  }
+}
+
+// Import Bootstrap and its default variables
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,17 @@
+.carousel-wrapper {
+  width: 100%;
+  margin: 0 auto;
+
+  .slides {
+    width: 100%;
+    height: 500px;
+    object-fit:contain;
+    background-color: #000;
+  }
+}
+
+@media (max-width: 768px) {
+  .control-dots {
+    display: none;
+  }
+}

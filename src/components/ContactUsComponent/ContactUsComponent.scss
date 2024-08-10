@@ -1,0 +1,138 @@
+.main-contact-us-container {
+  background-color: #fff0e7;
+  padding-top: 50px;
+
+  .heading-contact {
+    text-align: center;
+    color: rgb(255, 145, 0);
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+}
+
+.contact-us-container {
+  display: flex;
+  padding: 40px;
+
+  flex-direction: row;
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-right: 40px;
+    color: black;
+
+    .logo {
+      margin-bottom: 20px;
+
+      img {
+        width: 150px;
+        height: auto;
+      }
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+
+      a {
+        margin-right: 15px;
+        font-size: 24px;
+        color: black;
+      }
+    }
+  }
+
+  .contact-form {
+    flex: 1;
+    background-color: #fff0e7;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      .form-group {
+        margin-bottom: 15px;
+
+        label {
+          font-size: 16px;
+          margin-bottom: 5px;
+          display: block;
+        }
+
+        input,
+        textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 16px;
+        }
+
+        textarea {
+          resize: none;
+        }
+      }
+
+      button {
+        background-color: #ff7f00;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #e06700;
+        }
+      }
+    }
+  }
+
+  .footer {
+    margin-top: auto;
+    padding-top: 10px;
+    text-align: start;
+    color: black;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-us-container {
+    flex-direction: column;
+
+    .separator {
+      display: none;
+    }
+
+    .contact-form {
+      order: 1; // Move contact form above
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      padding-right: 0;
+      margin-top: 20px;
+      order: 2; // Move contact info below
+    }
+
+    .contact-form:before {
+      display: none; // Remove the vertical line in mobile view
+    }
+  }
+}
