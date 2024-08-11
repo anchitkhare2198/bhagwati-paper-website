@@ -5,6 +5,7 @@ import OurValuesComponent from "../../components/OurValuesComponent/OurValuesCom
 // import TestimonialComponent from "../../components/TestimonialsComponent/TestimonialsComponent";
 import ContactUsComponent from "../../components/ContactUsComponent/ContactUsComponent";
 import OurProductsComponent from "../../components/OurProductsComponent/OurProductsComponent";
+import OurClientsComponent from "../../components/OurClientsComponent/OurClientsComponent";
 
 const HomePage: FunctionComponent = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage: FunctionComponent = () => {
       <OurValuesComponent />
       <OurProductsComponent />
       {/* <TestimonialComponent /> */}
+      <OurClientsComponent />
       <ContactUsComponent />
     </div>
   );

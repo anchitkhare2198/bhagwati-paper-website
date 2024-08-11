@@ -22,6 +22,9 @@ const TopBarComponent: FunctionComponent = () => {
             <a href="#products">Our Products</a>
           </li>
           <li>
+            <a href="#clients">Our Clients</a>
+          </li>
+          <li>
             <a href="#contact-us">Contact Us</a>
           </li>
         </ul>

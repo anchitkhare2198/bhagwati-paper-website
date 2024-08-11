@@ -3,7 +3,9 @@ import { FunctionComponent } from "react";
 import "./ContactUsComponent.scss";
 
 import Logo from "../../assets/images/Logo_contact_Us.svg";
-import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import Neelkamal_Logo from "../../assets/images/slides/Slide-7.jpeg";
+// import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 
 const ContactUsComponent: FunctionComponent = () => {
@@ -12,34 +14,45 @@ const ContactUsComponent: FunctionComponent = () => {
       <h2 className="heading-contact">Contact Us</h2>
       <div className="contact-us-container" id="contact-us">
         <div className="contact-info">
-          <div className="logo">
-            <img src={Logo} alt="Logo" />
+          <div className="logo-container">
+            <div className="logo">
+              <img src={Logo} alt="Logo" />
+            </div>
+            <div className="logo">
+              <img src={Neelkamal_Logo} alt="Neelkamal_Logo" />
+            </div>
           </div>
           <h2>Bhagwati Paper Trading Company</h2>
-          <p>
+          {/* <p>
             <strong>Phone:</strong> +91 7905107864
+          </p> */}
+          <p>
+            <strong>Phone:</strong>{" "}
+            <a href="tel:+917905107864" className="phone-link">
+              +91 7905107864
+            </a>
           </p>
           <p>
             <strong>Address:</strong> 46 B, Chah Chand, Zero Road, Prayagraj,
             Uttar Pradesh 211003
           </p>
           <div className="social-icons">
-            <a href="#">
+            <a href="https://www.instagram.com/bhagwati_paper_trading_company">
               <FaInstagram />
             </a>
-            <a href="#">
+            <a href="https://www.facebook.com/BhagwatiPaperTradingCo/">
               <FaFacebook />
             </a>
-            <a href="#">
+            {/* <a href="#">
               <FaLinkedin />
-            </a>
+            </a> */}
           </div>
           <footer className="footer">
             &copy; {new Date().getFullYear()} Bhagwati Paper Trading Company.
             All rights reserved.
           </footer>
         </div>
-        <div className="contact-form">
+        {/* <div className="contact-form">
           <form>
             <div className="form-group">
               <label htmlFor="name">Name</label>
@@ -73,7 +86,7 @@ const ContactUsComponent: FunctionComponent = () => {
             </div>
             <button type="submit">Submit</button>
           </form>
-        </div>
+        </div> */}
       </div>
     </div>
   );

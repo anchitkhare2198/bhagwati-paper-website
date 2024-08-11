@@ -1,12 +1,12 @@
 .main-contact-us-container {
-  background-color: #fff0e7;
+  // background-color: #fff0e7;
   padding-top: 50px;
 
   .heading-contact {
     text-align: center;
-    color: rgb(255, 145, 0);
+    // color: rgb(255, 145, 0);
     font-size: 2.5rem;
-    font-weight: bold;
+    // font-weight: bold;
   }
 }
 
@@ -23,12 +23,23 @@
     padding-right: 40px;
     color: black;
 
-    .logo {
-      margin-bottom: 20px;
+    .logo-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
 
-      img {
-        width: 150px;
-        height: auto;
+      .logo {
+        margin-bottom: 20px;
+
+        img {
+          width: 150px;
+          height: auto;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        gap: 10px;
       }
     }
 
@@ -50,6 +61,11 @@
         font-size: 24px;
         color: black;
       }
+    }
+
+    .phone-link {
+      color: inherit;
+      text-decoration: none;
     }
   }
 
